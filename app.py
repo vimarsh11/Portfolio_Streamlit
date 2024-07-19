@@ -338,11 +338,11 @@ skills = [
         "icon": "📊"
     },
     {
-        "name": "Python(Basic)",
+        "name": "Python (Basic)",
         "icon": "🐍"
     },
     {
-        "name": "JavaScript(intermediate)",
+        "name": "JavaScript (Intermediate)",
         "icon": "📜"
     },
     {
