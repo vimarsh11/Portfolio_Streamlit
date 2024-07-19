@@ -39,11 +39,11 @@ with col1:
       st.link_button("GitHub 🧑‍💻", "https://github.com/vimarsh11")
       st.link_button("Email 📩", "jaiswaldesh16@gmail.com")
 with col2:
-    col3, col4 = st.columns([3, 7])
+    col3, col4, col5 = st.columns([2, 7, 1])
     st.markdown("""
     <style>
     .image-container {
-        margin-top: 100px;
+        margin-top: 90px;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -51,7 +51,7 @@ with col2:
     # Your Streamlit layout with the image
     with col4:
         st.markdown('<div class="image-container">', unsafe_allow_html=True)
-        st.image(image, width=400)
+        st.image(image, width=350)
         st.markdown('</div>', unsafe_allow_html=True)
 
 persona = """
