@@ -434,16 +434,6 @@ def skill_tab():
 
 with st.spinner(text="Loading section..."):
     skill_tab()
-
-reset_scroll_js = """
-    <script>
-    window.onload = function() {
-        window.scrollTo(0, 0);
-    }
-    </script>
-"""
-st.markdown(reset_scroll_js, unsafe_allow_html=True)
-
 st.write("##")
 with st.container():
     st.header("Drop Your Query !!")
@@ -550,3 +540,13 @@ footer_content = """
 
 # Render the footer
 st.markdown(footer_content, unsafe_allow_html=True)
+
+scroll_to_top_js = """
+<script>
+    window.onload = function() {
+        window.scrollTo(0, 0);
+    };
+</script>
+"""
+
+st.markdown(scroll_to_top_js, unsafe_allow_html=True)
