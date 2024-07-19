@@ -5,7 +5,8 @@ import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
 
-genai.configure(api_key="AIzaSyDKROV9lPYl9WOUk8NetXLHKJCMAjpgwTs")
+api_key = st.secrets["GOOGLE_API_KEY"]
+genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 st.set_page_config(layout="wide")
