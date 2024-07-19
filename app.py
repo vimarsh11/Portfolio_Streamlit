@@ -11,6 +11,15 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 
 st.set_page_config(layout="wide")
 
+reset_scroll_js = """
+    <script>
+    window.onload = function() {
+        window.scrollTo(0, 0);
+    }
+    </script>
+"""
+st.markdown(reset_scroll_js, unsafe_allow_html=True)
+
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
