@@ -1,5 +1,5 @@
-streamlit
-google-generativeai
-streamlit-option-menu
-streamlit-lottie
-pillow
+streamlit>=1.38.0
+google-generativeai>=0.8.0
+streamlit-option-menu>=0.3.13
+streamlit-lottie>=0.0.5
+requests>=2.31.0
